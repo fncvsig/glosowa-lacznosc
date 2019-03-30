@@ -1,5 +1,5 @@
 # Głosowa łączność z komputerem
-Sterowanie inteligentym budynkiem za pomocą mowy
+Sterowanie inteligentnym budynkiem za pomocą mowy
 
 ## Czym sterujemy i w jaki sposób
 
@@ -24,4 +24,4 @@ Sterowanie inteligentym budynkiem za pomocą mowy
 * zimno
 
 ## Typ danych
-Pliki dzwiękowe (komendy) mają częstotliwość 8kHz i są zapisywane z rozszerzeniem .wav 
+Pliki dźwiękowe (komendy) mają częstotliwość 8kHz i są zapisywane z rozszerzeniem .wav 
