@@ -54,7 +54,7 @@ y_pred = knn.predict(X_train)
 
 
 i=-1;
-for subdir, dirs, files in os.walk('test_dataK'):
+for subdir, dirs, files in os.walk('tests'):
     for file in files:
         i+=1;
         print("For:\t", file , "\t predicted:\t" , y_pred[i] )
