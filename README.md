@@ -58,3 +58,17 @@ Fotelem:
 Pliki dźwiękowe (komendy) mają częstotliwość 8kHz i są zapisywane z rozszerzeniem .wav 
 
 Każda z 16 komend była nagrywana przez trzy różne osoby pracujące nad tym projektem (Anna Straś, Martyna Szot, Kamila Chyży), o różnych porach dnia przez kilka dni, w sumie 38 razy.
+
+## Włączenie programu na własnym komputerze
+Wymagania wstępne:
+* Python 3
+* biblioteki `pandas`, `numpy`, `scipy`, `pickle`, `sklearn`
+* środowisko do uruchamiania kodu w pythonie (np. PyCharm)
+
+1. Pobierz zawartość tego repozytorium 
+2. Uruchom `classifyTestData.py` w celu obejrzenia wyników klasyfikacji komend testowych
+
+W razie zmiany w folderach `data` lub `tests` uruchom pliki w następującej kolejności:
+* `createMFCCdata.py`  (tworzy `results.csv`, plik z cechami MFCC dla danych wejściowych)
+* `createKNN.py` (tworzy `knn.sav`, model k-nn na podstawie cech MFCC)
+* `classifyTestData.py`  (klasyfikuje dane testowe na podstawie modelu knn)
