@@ -6,7 +6,7 @@ import wave
 frameRate = 8000;
 clear = 1;
 
-for subdir, dirs, files in os.walk('data'):
+for subdir, dirs, files in os.walk('../data') or :
     for file in files:
         filepath = subdir + os.sep + file
 
