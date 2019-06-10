@@ -62,7 +62,7 @@ Każda z 16 komend była nagrywana przez trzy różne osoby pracujące nad tym p
 ## Etapy projektu
 1. `createMFCCdata.py` - tworzy plik `results.csv`, który dla dla każdego z 576 nagranych plików audio przechowuje typ komendy oraz cechy MFCC wyznaczne na podstawie biblioteki open-source https://github.com/jameslyons/python_speech_features/
 
-2. `createKNN.py` - tworzy `svm.sav`, model SVM na podstawie danych w `results.csv`
+2. `createSVM.py` - tworzy `svm.sav`, model SVM na podstawie danych w `results.csv`
 
 3. `classifyTestData.py` - klasyfikuje dane testowe na podstawie modelu SVM
 
