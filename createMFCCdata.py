@@ -1,16 +1,9 @@
 import pandas as pd
-import numpy as np
 import os
 from python_speech_features import mfcc
 from python_speech_features import delta
 from python_speech_features import logfbank
 import scipy.io.wavfile as wav
-
-
-#dir_path = os.path.dirname(os.path.realpath(__file__)) #?
-
-#!/usr/bin/env python
-
 
 label = -1;
 result = [];
@@ -25,13 +18,14 @@ for subdir, dirs, files in os.walk('data'):
             line = [label, command]
 
             (rate, sig) = wav.read(filepath)
+            sig=sig[:,:1]
+            
             mfcc_feat = mfcc(sig, rate)
             d_mfcc_feat = delta(mfcc_feat, 2)
             fbank_feat = logfbank(sig, rate)
-
-            features = fbank_feat[37, :]
+            features = fbank_feat[18, :]
+            
             line.extend(features)
-
             result.append(line)
 
 
